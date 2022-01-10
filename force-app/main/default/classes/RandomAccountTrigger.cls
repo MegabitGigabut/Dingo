@@ -1,12 +1,12 @@
 public with sharing class RandomAccountTrigger {
     public static void randomAccountInserter(List<Account> accs) {
-        List<Account> newAccs = new List<Account>();
+        List<Account> newA = new List<Account>();
         for(Account acc : accs){
             if(String.isEmpty(acc.Phone)){
                 acc.Phone = '0697';
-                newAccs.add(acc);
+                newA.add(acc);
             }
         }
-        insert newAccs;
+        insert newA;
     }
 }
