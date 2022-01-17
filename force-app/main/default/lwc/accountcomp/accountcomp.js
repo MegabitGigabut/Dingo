@@ -1,6 +1,6 @@
 import { LightningElement, wire,api } from 'lwc';
 import getRandomAccs from '@salesforce/apex/RandomAccCreator.getRandomAccs';
-//I'm in branch add-ons
+//I'm in branch add-on
 
 const columns = [
     {label:'Account Name', fieldName:'Name', type:'Name'},
